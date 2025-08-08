@@ -1,10 +1,10 @@
 
 #Aula 2
-#Introdu??o ao R
+#Introdução ao R
 
 #Arquivo de dados
 
-#Como escolher o diret?rio de trabalho?
+#Como escolher o diretório de trabalho?
 
 setwd("~/Curso_R_2024/")
 getwd()
@@ -17,13 +17,13 @@ View(UNpop)
 
 #Analisando a estrutura do meu arquivo de dados
 
-names(UNpop) #Nome das minhas vari?veis
+names(UNpop) #Nome das minhas variáveis
 nrow(UNpop) #Quantas casos (linhas) tem o meu dataframe?
-ncol(UNpop) #Quantas vari?veis (colunas) tem o meu dataframe?
-dim(UNpop) #Quantos casos e vari?veis?
+ncol(UNpop) #Quantas variáveis (colunas) tem o meu dataframe?
+dim(UNpop) #Quantos casos e variáveis?
 summary(UNpop) #Resumo do meu dataframe
 
-#Como acessar as vari?veis? Os vetores?
+#Como acessar as variáveisóOs vetores?
 
 UNpop$world.pop
 
@@ -31,13 +31,13 @@ UNpop$world.pop
 
 #Padr?o: "Nome do arquivo"[acessar valores pela linha,acessar valores pela coluna]
 
-UNpop[,"world.pop"] #Acessar s? a minha vari?vel world.pop
+UNpop[,"world.pop"] #Acessar sóa minha variável world.pop
 
-UNpop[c(1, 2, 3),] #Acessar s? valores das linhas 1, 2 e 3
+UNpop[c(1, 2, 3),] #Acessar sóvalores das linhas 1, 2 e 3
 
-UNpop[1:3, "year"] #Acessar linhas especificas de uma vari?vel espec?fica
+UNpop[1:3, "year"] #Acessar linhas especificas de uma variável específica
 
-UNpop$world.pop[seq(from = 1, to = nrow(UNpop), by = 2)] #s?o 7 linhas
+UNpop$world.pop[seq(from = 1, to = nrow(UNpop), by = 2)] #são 7 linhas
 
 #Lidando com NAs (Valores omissos)
 
@@ -258,3 +258,4 @@ points(rep112$nominate_dim1,
 text(-0.75, 1, "Democrats")
 
 text(1, -1, "Republicans")
+
