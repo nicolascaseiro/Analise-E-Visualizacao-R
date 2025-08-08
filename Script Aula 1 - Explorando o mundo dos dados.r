@@ -1,24 +1,24 @@
 
 #Aula 1 Explorando o Mundo dos Dados
 
-#Introdução ao R
+#IntroduÃ§Ã£o ao R
 
-#1. Operações Aritméticas
+#1. OperaÃ§Ãµes AritmÃ©ticas
 
-5+3 #Ctrl + Enter para rodar o código do Script no Console
+5+3 #Ctrl + Enter para rodar o cÃ³digo do Script no Console
 
 5 + 3
 
 2*2+3
 
 #Se eu quiser que a soma seja rodada primeiro, tenho que colocar
-#entre parênteses
+#entre parÃªnteses
 
 2*(2+3)
 
 2*(2*(2+3))
 
-#Função raiz quadrada - Nome da função é "sqrt"
+#FunÃ§Ã£o raiz quadrada - Nome da funÃ§Ã£o Ã© "sqrt"
 
 sqrt(4)
 
@@ -36,13 +36,13 @@ result2
 
 print(result2)
 
-#Objetos armazenam também caracteres
+#Objetos armazenam tambÃ©m caracteres
 
 Lucas <- "professor curso R"
 
 Result <- "5+3"
 
-#Posso calcular em cima de objetos numéricos, mas não em cima de objetos
+#Posso calcular em cima de objetos numÃ©ricos, mas nÃ£o em cima de objetos
 #com caracteres
 
 #Exemplo
@@ -66,7 +66,7 @@ world.pop <- c(2525779, 3026003,3691173, 4449049,
 
 #Vetores podem ser combinados
 
-pop.first <- c(2525779, 3026003, 3691173) #População mundial de 1950, 1960 e 1970
+pop.first <- c(2525779, 3026003, 3691173) #PopulaÃ§Ã£o mundial de 1950, 1960 e 1970
 
 pop.second <- c(4449049, 5320817,6127700, 6916183) #Restante dos anos
 
@@ -78,7 +78,7 @@ pop.all2 <- c(pop.second,pop.first)
 
 pop.all2
 
-#Operações com vetores
+#OperaÃ§Ãµes com vetores
 
 pop.million <- world.pop / 1000
 
@@ -100,21 +100,21 @@ pop.rate[c(5,6,7)] <- 2
 
 pop.rate
 
-#Funções
+#FunÃ§Ãµes
 
-#Funções básicas
+#FunÃ§Ãµes bÃ¡sicas
 
-length(world.pop) #Tamanho do meu vetor, quantas informações tem dentro do vetor
+length(world.pop) #Tamanho do meu vetor, quantas informaÃ§Ãµes tem dentro do vetor
 
-min(world.pop) #Valor mínimo
+min(world.pop) #Valor mÃ­nimo
 
-max(world.pop) #Valor máximo
+max(world.pop) #Valor mÃ¡ximo
 
 range(world.pop) #Vai me apresentar o menor e o maior valor
 
-mean(world.pop) #Cálculo da média
+mean(world.pop) #CÃ¡lculo da mÃ©dia
 
-sum(world.pop) / length(world.pop) #Outro forma de calcular a média
+sum(world.pop) / length(world.pop) #Outro forma de calcular a mÃ©dia
 
 #Criando vetor ano
 
@@ -130,9 +130,9 @@ names(world.pop)
 
 world.pop
 
-#Criando funções
+#Criando funÃ§Ãµes
 
-#Criando função de "resumo"
+#Criando funÃ§Ã£o de "resumo"
 
 my.summary <- function(x){
   
@@ -145,10 +145,11 @@ my.summary <- function(x){
   return(out)
 }
 
-#Nossa função tem uma forma: my.summary(x)
+#Nossa funÃ§Ã£o tem uma forma: my.summary(x)
 
 z <- 1:10
 
 my.summary(z)
 
 my.summary(world.pop)
+
